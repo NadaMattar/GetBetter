@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.SuccessActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/im_success"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:id="@+id/item_on_boarding_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in_success"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/font"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/item_on_boarding_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/go_ahead_and_start_the_challenge"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:fontFamily="@font/font"
+            android:layout_marginBottom="60dp"/>
+
+        <Button
+            android:id="@+id/success_go_to_home"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/go_to_home_activity"
+            android:textSize="14sp"
+            android:fontFamily="@font/font"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/shape_rectangle_amber_with_rounded"/>
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="3dp"
+            android:background="@drawable/shape_rectangle_gray_with_rounded"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

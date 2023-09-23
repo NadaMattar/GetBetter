@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/shape_rectangle_gray_with_rounded">
+
+    <LinearLayout
+        android:id="@+id/item_habit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/item_habit_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Smoke Drink"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:fontFamily="@font/font"/>
+
+        <TextView
+            android:id="@+id/item_habit_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Bad Habit"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            android:fontFamily="@font/font"/>
+
+        <TextView
+            android:id="@+id/item_habit_action"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="Quit It"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:fontFamily="@font/font"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#f7941d</color>
+    <color name="secondary">#2AACE2</color>
+    <color name="thirty">#3953A4</color>
+
+    <color name="trans_primary">#10f7941d</color>
+    <color name="trans_secondary">#102AACE2</color>
+
+    <color name="black">#FF000000</color>
+    <color name="black_transparent">#40000000</color>
+    <color name="white">#FFFFFFFF</color>#F4F5F9
+    <color name="gray">#F4F5F9</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#89BD29</color>
+</resources>

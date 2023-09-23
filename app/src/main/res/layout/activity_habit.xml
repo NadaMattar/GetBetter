@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@color/white"
+    tools:context=".activities.HabitActivity">
+
+    <LinearLayout
+        android:id="@+id/habit_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="start|center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/shape_rectangle_gray_with_rounded_15">
+
+        <ImageButton
+            android:id="@+id/habit_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_back"
+            android:layout_marginStart="15dp"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/habit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name Habits"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/font"
+            android:layout_marginStart="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/habit_tab_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/habit_header">
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/habit_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/habit_tab_container"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape_rectangle_gray_with_rounded_15"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/habit_container">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="start"
+            android:text="A very bad habit that does not cause much harm to you and your life. One of the reasons for this habit is loneliness, so the most important advice we can advise you is to stay away from loneliness."
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/habit_section_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp" />
+
+        <Button
+            android:id="@+id/habit_action"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_rectangle_red_with_rounded"
+            android:fontFamily="@font/font"
+            android:text="@string/quit_it"
+            android:textSize="12sp" />
+        <Button
+            android:id="@+id/habit_stop"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_rectangle_red_with_rounded"
+            android:fontFamily="@font/font"
+            android:text="I Stopped Out of This"
+            android:textSize="12sp" />
+        <Button
+            android:id="@+id/habit_still"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_rectangle_green_with_rounded"
+            android:fontFamily="@font/font"
+            android:text="Are You Still Going ?"
+            android:textSize="12sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

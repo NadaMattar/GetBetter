@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Get Better</string>
+    <string name="app_description">Life with good habits is better</string>
+    <string name="app_right">All rights of the application are reserved to Get Better</string>
+    <string name="logo">logo</string>
+    <string name="continue_text">Continue</string>
+
+    <string name="on_boarding_title_one">Control your habits</string>
+    <string name="on_boarding_title_two">Develop good habits</string>
+    <string name="on_boarding_title_three">Get rid of bad habits</string>
+    <string name="on_boarding_description_one">Do not let your lusts and desires of the world control your lifestyle</string>
+    <string name="on_boarding_description_two">Many good habits can be acquired and made into a lifestyle with a little patience</string>
+    <string name="on_boarding_description_thirty">Bad habits negatively affect your life, so get rid of them today so that you can be the best</string>
+    <string name="sign_in_description">If you are registered with us, use your login dat, if not, register a new user from below</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget Password ?</string>
+    <string name="to_register_a_new_user">To register a new user , </string>
+    <string name="sign_up">Sign Up</string>
+
+
+    <string name="error_email_not_entry">Please check the email entry</string>
+    <string name="error_password_not_entry">Please check the password entry</string>
+    <string name="error_name_not_entry">Please check the name entry</string>
+
+    <string name="name">Name</string>
+    <string name="sign_up_description">Please use real data to benefit from the applications services</string>
+    <string name="if_you_have_an_account">If you have an account , </string>
+    <string name="password_recovery">Password Recovery</string>
+    <string name="forget_password_description">Don\'t worry, you can still recover the password, just enter your personal email here, then wait for our message</string>
+    <string name="if_you_remember_the_password">If you remember the password , </string>
+    <string name="go_ahead_and_start_the_challenge">Go ahead and start the challenge</string>
+    <string name="sign_in_success">Sign In Success</string>
+    <string name="go_to_home_activity">Go To Home Activity</string>
+    <string name="hello">Hello ...</string>
+    <string name="name_name_name">Name Name Name</string>
+    <string name="search_here">Search Here</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="statistics">Statistics</string>
+    <string name="more">More</string>
+
+
+    <string name="good_habit">Good Habit</string>
+    <string name="bad_habit">Bad Habit</string>
+    <string name="quit_it">Quit it</string>
+    <string name="acquisition">Acquisition</string>
+    <string name="notification">Notification</string>
+    <string name="habits_i_ve_acquired">habits I\'ve acquired</string>
+    <string name="habits_i_ve_broke">habits I\'ve broke</string>
+    <string name="policies_and_rules">Policies and rules</string>
+    <string name="show">show</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="language">Language</string>
+    <string name="application_setting">Application Setting</string>
+    <string name="account_setting">Account Setting</string>
+    <string name="current_duration">current duration</string>
+    <string name="longest">longest</string>
+    <string name="current">current</string>
+    <string name="total">total</string>
+    <string name="today_s_message">Today\'s message</string>
+    <string name="keep_going_you_can">Keep going you can</string>
+    <string name="habit_damage">Habit damage</string>
+    <string name="_52_damage">52 Damage</string>
+    <string name="habit_benefits">Habit benefits</string>
+    <string name="_21_benefit">21 Benefit</string>
+    <string name="days">Days</string>
+    <string name="hour">Hour</string>
+
+    <string name="msg_token_fmt"></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

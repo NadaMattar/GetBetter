@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">تحسين نفسك</string>
+    <string name="app_description">الحياة مع العادات الجيدة أفضل</string>
+    <string name="app_right">جميع حقوق التطبيق محفوظة لتحسين نفسك</string>
+    <string name="logo">شعار</string>
+    <string name="continue_text">متابعة</string>
+
+    <string name="on_boarding_title_one">التحكم في عاداتك</string>
+    <string name="on_boarding_title_two">تطوير عادات جيدة</string>
+    <string name="on_boarding_title_three">التخلص من عادات سيئة</string>
+    <string name="on_boarding_description_one">لا تدع شهوات ورغبات العالم تتحكم في نمط حياتك</string>
+    <string name="on_boarding_description_two">يمكن اكتساب العديد من العادات الجيدة وجعلها جزءًا من نمط حياتك مع القليل من الصبر</string>
+    <string name="on_boarding_description_thirty">العادات السيئة تؤثر سلباً على حياتك، لذا تخلص منها اليوم لتكون الأفضل</string>
+    <string name="sign_in_description">إذا كنت مسجلاً لدينا، استخدم معلومات تسجيل الدخول الخاصة بك، إذا لم يكن لديك حساب، قم بتسجيل مستخدم جديد من الأسفل</string>
+
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="forget_password">نسيت كلمة المرور؟</string>
+    <string name="to_register_a_new_user">لتسجيل مستخدم جديد، </string>
+    <string name="sign_up">التسجيل</string>
+
+    <string name="error_email_not_entry">الرجاء التحقق من إدخال البريد الإلكتروني</string>
+    <string name="error_password_not_entry">الرجاء التحقق من إدخال كلمة المرور</string>
+    <string name="error_name_not_entry">الرجاء التحقق من إدخال الاسم</string>
+
+    <string name="name">الاسم</string>
+    <string name="sign_up_description">الرجاء استخدام بيانات حقيقية للاستفادة من خدمات التطبيق</string>
+    <string name="if_you_have_an_account">إذا كان لديك حساب، </string>
+    <string name="password_recovery">استعادة كلمة المرور</string>
+    <string name="forget_password_description">لا تقلق، يمكنك استعادة كلمة المرور، فقط أدخل بريدك الإلكتروني الشخصي هنا، ثم انتظر رسالتنا</string>
+    <string name="if_you_remember_the_password">إذا تذكرت كلمة المرور، </string>
+    <string name="go_ahead_and_start_the_challenge">انطلق وابدأ التحدي</string>
+    <string name="sign_in_success">تم تسجيل الدخول بنجاح</string>
+    <string name="go_to_home_activity">الانتقال إلى الصفحة الرئيسية</string>
+    <string name="hello">مرحبًا ...</string>
+    <string name="name_name_name">اسم الشخص</string>
+    <string name="search_here">ابحث هنا</string>
+    <string name="home">الرئيسية</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="statistics">الإحصائيات</string>
+    <string name="more">المزيد</string>
+
+    <string name="good_habit">عادة جيدة</string>
+    <string name="bad_habit">عادة سيئة</string>
+    <string name="quit_it">اتركها</string>
+    <string name="acquisition">الاكتساب</string>
+    <string name="notification">الإشعارات</string>
+    <string name="habits_i_ve_acquired">العادات التي اكتسبتها</string>
+    <string name="habits_i_ve_broke">العادات التي انتهكتها</string>
+    <string name="policies_and_rules">السياسات والقوانين</string>
+    <string name="show">عرض</string>
+    <string name="contact_us">اتصل بنا</string>
+    <string name="sign_out">تسجيل الخروج</string>
+    <string name="personal_information">المعلومات الشخصية</string>
+    <string name="language">اللغة</string>
+    <string name="application_setting">إعدادات التطبيق</string>
+    <string name="account_setting">إعدادات الحساب</string>
+    <string name="current_duration">المدة الحالية</string>
+    <string name="longest">الأطول</string>
+    <string name="current">الحالي</string>
+    <string name="total">الإجمالي</string>
+    <string name="today_s_message">رسالة اليوم</string>
+    <string name="keep_going_you_can">استمر، يمكنك ذلك</string>
+    <string name="habit_damage">ضرر العادة</string>
+    <string name="_52_damage">52 ضرر</string>
+    <string name="habit_benefits">فوائد العادة</string>
+    <string name="_21_benefit">21 فائدة</string>
+    <string name="days">أيام</string>
+    <string name="hour">ساعة</string>
+
+    <string name="msg_token_fmt"></string>
+    <!-- يُرجى إزالة أو تغيير هذا النص البديل -->
+    <string name="hello_blank_fragment">مرحبًا، قالب فارغ</string>
+</resources>
