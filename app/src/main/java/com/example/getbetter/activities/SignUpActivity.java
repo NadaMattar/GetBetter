@@ -45,8 +45,7 @@ public class SignUpActivity extends AppCompatActivity {
         binding.signUpSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent( SignUpActivity.this , SignInActivity.class);
-                startActivity( intent );
+                startActivity( new Intent( SignUpActivity.this , SignInActivity.class) );
             }
         });
 
@@ -58,10 +57,10 @@ public class SignUpActivity extends AppCompatActivity {
                 String email = binding.signUpEmail.getText().toString();
                 String password = binding.signUpPassword.getText().toString();
 
-                if (name.trim().length() != 0 && email.trim().length() != 0 && password.trim().length() != 0){
+                if (name.trim().length() != 0 && email.trim().length() != 0 && password.trim().length() != 0){ // validation
                     register(name ,email ,password);
                 } else {
-                    if (name.trim().length() == 0){
+                    if (name.trim().length() == 0){ // يعني فارغة أو .isEmpty
                         binding.signUpName.setError(getString(R.string.error_name_not_entry));
                     }else {
                         binding.signUpName.setError(null);
@@ -110,19 +109,19 @@ public class SignUpActivity extends AppCompatActivity {
                             user.put("name", name);
                             user.put("email", email);
 
-                            firebaseFirestore.collection("users")
+                            firebaseFirestore.collection("users") // add to collection users
                                     .add(user)
                                     .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                                         @Override
                                         public void onSuccess(DocumentReference documentReference) {
                                             startActivity( new Intent(SignUpActivity.this , SignInActivity.class) );
+                                            finish();
                                         }
                                     })
                                     .addOnFailureListener(new OnFailureListener() {
                                         @Override
                                         public void onFailure(@NonNull Exception e) {
                                             Toast.makeText(SignUpActivity.this, "Failure", Toast.LENGTH_SHORT).show();
-
                                         }
                                     });
                         }else {

@@ -50,16 +50,14 @@ public class SignInActivity extends AppCompatActivity {
         binding.signInForgetPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent( SignInActivity.this , ForgetPasswordActivity.class);
-                startActivity( intent );
+                startActivity( new Intent( SignInActivity.this , ForgetPasswordActivity.class) );
             }
         });
 
         binding.signInSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent( SignInActivity.this , SignUpActivity.class);
-                startActivity( intent );
+                startActivity( new Intent( SignInActivity.this , SignUpActivity.class) );
             }
         });
 
@@ -72,7 +70,6 @@ public class SignInActivity extends AppCompatActivity {
                 if (email.trim().length() != 0 && password.trim().length() != 0){
                     login(email ,password);
                 }else {
-
                     if (email.trim().length() == 0){
                         binding.signInEmail.setError(getString(R.string.error_email_not_entry));
                     }else {

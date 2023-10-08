@@ -33,13 +33,6 @@ public class MainActivity extends AppCompatActivity {
         binding =ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-//        final int home = R.id.main_menu_home;
-//        final int statistics = R.id.main_menu_statistics;
-//        final int notification = R.id.main_menu_notification;
-//        final int more = R.id.main_menu_more;
-
-
-
         userPreference = new UserPreference(this);
 
         binding.mainUserName.setText(userPreference.getUserData().getName());
@@ -56,17 +49,17 @@ public class MainActivity extends AppCompatActivity {
                 Fragment fragment = null;
 
                 switch (item.getItemId()){
-                    case 1000003: // home
-                        fragment = new HomeFragment();
+                    case R.id.main_menu_home:
+                        fragment = new HomeFragment();// home
                         break;
-                    case 1000026: // Statistics
-                        fragment = new StatisticsFragment();
+                    case R.id.main_menu_statistics:
+                        fragment = new StatisticsFragment();// Statistics
                         break;
-                    case 1000032: //Notification
-                        fragment = new NotificationFragment();
+                    case R.id.main_menu_notification:
+                        fragment = new NotificationFragment(); //Notification
                         break;
-                    case 1000014: //More
-                        fragment = new MoreFragment();
+                    case R.id.main_menu_more:
+                        fragment = new MoreFragment();//More
                         break;
                 }
 

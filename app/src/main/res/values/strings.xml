@@ -75,4 +75,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+
+    <string name="will_become_a_habit">"This matter, if you continue it for 21 days, will become a habit for you, and soon the 21 days will end, and also after 90 days, it will become a way of life for you."</string>
+    <string name="become_a_habit">"Congratulations to you, this has already become a habit for you and if you continue on it for 90 days it will become a lifestyle"</string>
+    <string name="become_a_lifestyle">"Congratulations to you, this has already become a habit for you and if you continue on it for 90 days it will become a lifestyle"</string>
+
+
 </resources>

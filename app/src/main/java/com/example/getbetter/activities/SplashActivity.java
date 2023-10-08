@@ -40,12 +40,13 @@ public class SplashActivity extends AppCompatActivity {
             // ازا لاء حيروح ع الأونبوردينج
             Intent intent = new Intent( SplashActivity.this , OnBoardingActivity.class);
             startActivity( intent );
+            finish();
         }
 
     }
 
 
-    public void updateData(){
+    public void updateData(){ // دالة لتحديث بيانات اليوسر وجلب بياناته
         firebaseFirestore.collection("users")
                 .whereEqualTo("id", userPreference.getUserData().getId()) // هان بطلب منه يجيبلي بيانات المستخدم يلي الآي دي تاعه بيساوي يلي في الشيرد
                 .get()
@@ -61,9 +62,8 @@ public class SplashActivity extends AppCompatActivity {
                                 user.setName(document.getString("name"));
                             }
                             userPreference.setUserData( user );
-
-                            Intent intent = new Intent( SplashActivity.this , MainActivity.class);
-                            startActivity( intent );
+                            startActivity( new Intent(SplashActivity.this , MainActivity.class) );
+                            finish();
 
                         } else {
                             Log.d("USER_DATA", "Error getting documents: ", task.getException());

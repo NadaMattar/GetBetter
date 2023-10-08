@@ -43,6 +43,7 @@ public class HabitOptionsActivity extends AppCompatActivity {
 //
 
         binding.habitOptionsTitle.setText(name);
+
         firebaseFirestore.collection("habit_options")
                 .whereEqualTo("id_section" , id )
                 .get()

@@ -29,14 +29,14 @@ public class OnBoardingActivity extends AppCompatActivity {
 
         OnBoardingSliderPagerAdapter onBoardingSliderPagerAdapter = new OnBoardingSliderPagerAdapter(onBoardingArrayList);
         binding.onBoardingPager.setAdapter(onBoardingSliderPagerAdapter);
-        binding.onBoardingIndicator.setViewPager(binding.onBoardingPager);
+        binding.onBoardingIndicator.setViewPager(binding.onBoardingPager); // هان ربطت الفيو بيجر مع الاندكيتور
 
 
-        binding.onBoardingContinue.setOnClickListener(new View.OnClickListener() {
+        binding.onBoardingContinue.setOnClickListener(new View.OnClickListener() { // الضغط على زر الاستمرار
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent( OnBoardingActivity.this , SignInActivity.class);
-                startActivity( intent );
+                startActivity( new Intent( OnBoardingActivity.this , SignInActivity.class) );
+                finish();
             }
         });
 

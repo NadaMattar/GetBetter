@@ -44,7 +44,7 @@
     <string name="good_habit">عادة جيدة</string>
     <string name="bad_habit">عادة سيئة</string>
     <string name="quit_it">اتركها</string>
-    <string name="acquisition">الاكتساب</string>
+    <string name="acquisition">اكتساب</string>
     <string name="notification">الإشعارات</string>
     <string name="habits_i_ve_acquired">العادات التي اكتسبتها</string>
     <string name="habits_i_ve_broke">العادات التي انتهكتها</string>
@@ -72,4 +72,10 @@
     <string name="msg_token_fmt"></string>
     <!-- يُرجى إزالة أو تغيير هذا النص البديل -->
     <string name="hello_blank_fragment">مرحبًا، قالب فارغ</string>
+
+    <string name="will_become_a_habit">إذا استمرت في هذا الأمر لمدة 21 يومًا، سيصبح عادةً لك، وقريبًا ستنتهي الـ 21 يومًا، وأيضًا بعد 90 يومًا، ستصبح طريقة حياتك."</string>
+    <string name="become_a_habit">تهانينا لك، هذا أصبح بالفعل عادة لك وإذا استمريت فيه لمدة 90 يومًا سيصبح نمط حياتك.</string>
+    <string name="become_a_lifestyle">تهانينا لك، هذا أصبح بالفعل عادة لك وإذا استمريت فيه لمدة 90 يومًا سيصبح نمط حياتك.</string>
+
+
 </resources>

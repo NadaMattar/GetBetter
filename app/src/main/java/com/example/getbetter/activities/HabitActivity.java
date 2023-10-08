@@ -74,7 +74,7 @@ public class HabitActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if (task.isSuccessful()){
                             for (QueryDocumentSnapshot document : task.getResult()){
-                                if (document.exists()){
+                                if (document.exists()){ // هان يعني لازالت موجودة ومشترك فيها
                                     userIsSignHabit = true;
                                     durationFragment = new DurationFragment(document.getString("timestamp"));
                                 }
@@ -84,14 +84,14 @@ public class HabitActivity extends AppCompatActivity {
                                 binding.habitContainer.setVisibility(View.VISIBLE);
                                 binding.habitStop.setVisibility(View.VISIBLE);
                                 binding.habitStill.setVisibility(View.VISIBLE);
-                                binding.habitAction.setVisibility(View.GONE);
+                                binding.habitAction.setVisibility(View.GONE); //  هاي بكون مظهراها في حالة اني لسة مش مشتركة
                             }
                         }
                     }
                 });
 
         binding.habitTitle.setText(name);
-        if (type){ // اذا التايب تروو يعني مش مشترك في العادة
+        if (type){ // اذا التايب تروو يلي هي القيمة يلي ضفتها من الفيربيز ستور  يعني مش مشترك في العادة
             binding.habitAction.setBackground(getResources().getDrawable(R.drawable.shape_rectangle_green_with_rounded));
             binding.habitAction.setText("Get into the habit");
         }
@@ -114,6 +114,7 @@ public class HabitActivity extends AppCompatActivity {
                     }
                 });
 
+        // زر الرجوع
         binding.habitBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -121,14 +122,15 @@ public class HabitActivity extends AppCompatActivity {
             }
         });
 
-        binding.habitAction.setOnClickListener(new View.OnClickListener() {
+        // هاد آكشن اذا بدي أشترك
+        binding.habitAction.setOnClickListener(new View.OnClickListener() { // لما أضغط ع زر الاشتراك بالعادة
             @Override
             public void onClick(View v) {
                 Map<String, Object> userHabit = new HashMap<>();
                 userHabit.put("id_habit", id );
                 userHabit.put("id_user", userPreference.getUserData().getId());
                 userHabit.put("name_habit", name);
-                userHabit.put("timestamp",  getTimestamp());
+                userHabit.put("timestamp",  getTimestamp()); // وضع الوقت الحالي للاشتراك
                 userHabit.put("timestamp_end",  "");
 
                 firebaseFirestore.collection("user_has_habit")
@@ -142,13 +144,14 @@ public class HabitActivity extends AppCompatActivity {
             }
         });
 
+        // استمرار الاشتراك بهذه العادة
         binding.habitStill.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Dialog dialog = new Dialog(HabitActivity.this);
                 dialog.setContentView(R.layout.dialog_still_habit);
-                dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT , ViewGroup.LayoutParams.WRAP_CONTENT);
-                dialog.setCancelable(true);
+                dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT , ViewGroup.LayoutParams.WRAP_CONTENT); // طول وعرض الديالوج
+                dialog.setCancelable(true); // هان علشان لو ضغطت ع أي مكان يختفي الديالوج
 
                 TextView dialog_text =  dialog.findViewById(R.id.dialog_text);
                 Button dialog_hide =  dialog.findViewById(R.id.dialog_hide);
@@ -157,14 +160,15 @@ public class HabitActivity extends AppCompatActivity {
                 dialog_hide.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        dialog.hide();
+                        dialog.hide();// هاي دالة استخدمتها عشان أخفيه لمن أضغط ع الزر
                     }
                 });
 
-                dialog.show();
+                dialog.show(); // هذه علشان أعرض الديالوج
             }
         });
 
+        // ايقاف الاشتراك بهذه العادة
         binding.habitStop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -203,7 +207,7 @@ public class HabitActivity extends AppCompatActivity {
     }
 
     public String getTimestamp() {
-        long timestamp = System.currentTimeMillis();
-        return String.valueOf(timestamp);
+        long timestamp = System.currentTimeMillis(); // الحصول على الوقت بالملي ثانية
+        return String.valueOf(timestamp); // تحويله إلى نص
     }
 }

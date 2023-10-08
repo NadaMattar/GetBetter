@@ -42,7 +42,7 @@ public class DurationFragment extends Fragment {
         final float[] stats = new float[3];
 
         if (getDay() <= 21){
-            binding.fragmentDurationTitle.setText("This matter, if you continue it for 21 days, will become a habit for you, and soon the 21 days will end, and also after 90 days, it will become a way of life for you.");
+            binding.fragmentDurationTitle.setText(R.string.will_become_a_habit);
             binding.fragmentDurationResidual.setText(String.valueOf(21 - getDay()) + "\nday left");
             colors[0] = getResources().getColor( R.color.gray);
             colors[1] = getResources().getColor( R.color.green);
@@ -55,8 +55,8 @@ public class DurationFragment extends Fragment {
             binding.slimChart.setStats(stats);
         }
         else if (getDay()<=90 && getDay() > 21){
-            binding.fragmentDurationTitle.setText("Congratulations to you, this has already become a habit for you and if you continue on it for 90 days it will become a lifestyle");
-            binding.fragmentDurationResidual.setText(String.valueOf(90 - getDay()) + "\nday left");
+            binding.fragmentDurationTitle.setText(R.string.become_a_habit);
+            binding.fragmentDurationResidual.setText(String.valueOf(90 - getDay()) + "\nday left"); // هان بحط الأيام المتبقية لحتى أكتمل لل 21
             colors[0] = getResources().getColor( R.color.gray);
             colors[1] = getResources().getColor( R.color.green);
             colors[2] = getResources().getColor( R.color.primary);
@@ -68,7 +68,7 @@ public class DurationFragment extends Fragment {
             binding.slimChart.setStats(stats);
         }
         else {
-            binding.fragmentDurationTitle.setText("Congratulations, this has already become a way of life for you. We wish you success");
+            binding.fragmentDurationTitle.setText(R.string.become_a_lifestyle);
             binding.fragmentDurationResidual.setText("Good Gob");
             colors[0] = getResources().getColor( R.color.gray);
             colors[1] = getResources().getColor( R.color.green);
@@ -86,14 +86,14 @@ public class DurationFragment extends Fragment {
     }
 
     private int getDay(){
-        Calendar cal = Calendar.getInstance();
-        cal.setTimeInMillis(Long.parseLong( timestamp ));
-        int day = cal.get(Calendar.DAY_OF_YEAR);
+        Calendar cal = Calendar.getInstance(); // مؤشر على الكاليند الحالي
+        cal.setTimeInMillis(Long.parseLong( timestamp )); //    أعطيته الوقت يلي هو نصي وبدي اياه يحوله ل  long
+        int day = cal.get(Calendar.DAY_OF_YEAR); // وهان جاب اليوم يلي تابع للرقم
 
-        Calendar nowCal = Calendar.getInstance();
+        Calendar nowCal = Calendar.getInstance(); // وهان جاب اليوم الحالي
         int nowDay = nowCal.get(Calendar.DAY_OF_YEAR);
 
-        return nowDay - day ;
+        return nowDay - day ; // وهان حرجع الأيام يلي عدها
     }
 
     private int getHour(){
